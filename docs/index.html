@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4K Converter — Make Any Video Play Everywhere</title>
+<meta name="description" content="4K Converter turns HEVC and HDR iPhone videos into universal MP4 — or MOV, GIF and M4A audio — at up to 4K, entirely on your device. No uploads, no accounts.">
+<link rel="icon" type="image/png" href="assets/icon-180.png">
+<style>
+  :root{
+    --bg:#0a0a0f;
+    --panel:#13131a;
+    --border:rgba(255,255,255,0.08);
+    --text:#f5f5f7;
+    --muted:rgba(245,245,247,0.62);
+    --faint:rgba(245,245,247,0.38);
+    --purple:#9433ff;
+    --blue:#3380ff;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;
+    overflow-x:hidden;
+  }
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+  nav{
+    position:sticky;top:0;z-index:10;
+    background:rgba(10,10,15,0.78);
+    backdrop-filter:saturate(180%) blur(14px);
+    -webkit-backdrop-filter:saturate(180%) blur(14px);
+    border-bottom:1px solid var(--border);
+  }
+  .navrow{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;text-decoration:none}
+  .brand img{width:28px;height:28px;border-radius:7px;display:block}
+  .navlinks{display:flex;gap:28px;font-size:14px;font-weight:600}
+  .navlinks a{text-decoration:none;color:var(--muted)}
+  .navlinks a:hover{color:var(--text)}
+
+  header.hero{padding:88px 0 72px;text-align:center;position:relative}
+  header.hero::before{
+    content:"";position:absolute;inset:-10% -10% auto -10%;height:520px;z-index:-1;
+    background:radial-gradient(closest-side, rgba(148,51,255,0.20), rgba(51,128,255,0.10) 55%, transparent 75%);
+    pointer-events:none;
+  }
+  .icon-hero{width:104px;height:104px;border-radius:24px;box-shadow:0 20px 60px rgba(148,51,255,0.35);margin-bottom:28px}
+  h1{font-size:44px;line-height:1.12;font-weight:800;margin:0 0 16px;letter-spacing:-0.02em}
+  .gradient-text{
+    background:linear-gradient(90deg,var(--purple),var(--blue));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .sub{color:var(--muted);font-size:18px;max-width:620px;margin:0 auto 32px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .chip{
+    border:1px solid var(--border);background:var(--panel);
+    border-radius:999px;padding:8px 16px;font-size:13px;font-weight:600;color:var(--muted);
+  }
+
+  section{padding:64px 0}
+  h2{font-size:28px;font-weight:800;margin:0 0 28px;letter-spacing:-0.01em}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .card{
+    background:var(--panel);border:1px solid var(--border);
+    border-radius:16px;padding:22px 24px;
+  }
+  .card h3{margin:0 0 8px;font-size:17px;font-weight:700}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+
+  footer{border-top:1px solid var(--border);padding:32px 0 56px}
+  .foot-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+  .foot-links{display:flex;gap:22px;font-size:13px;color:var(--muted)}
+  .foot-links a{text-decoration:none}
+  .foot-links a:hover{color:var(--text)}
+
+  @media (max-width:600px){
+    h1{font-size:32px}
+    .sub{font-size:16px}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap navrow">
+    <a class="brand" href="./">
+      <img src="assets/icon-180.png" alt="4K Converter icon">
+      4K Converter
+    </a>
+    <div class="navlinks">
+      <a href="privacy/">Privacy</a>
+      <a href="mailto:williamscott701@gmail.com">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="icon-hero" src="assets/icon.png" alt="4K Converter app icon">
+    <h1>Make any video<br><span class="gradient-text">play everywhere.</span></h1>
+    <p class="sub">
+      Modern iPhones record in HEVC and HDR — formats that can look washed out or refuse
+      to open on older devices, Windows PCs, TVs and many apps. 4K Converter re-encodes
+      them into files everything plays, at up to full 4K, entirely on your phone.
+    </p>
+    <div class="chips">
+      <span class="chip">Up to 4K</span>
+      <span class="chip">HDR → SDR</span>
+      <span class="chip">MP4 · MOV · GIF · M4A</span>
+      <span class="chip">100% on-device</span>
+    </div>
+  </div>
+</header>
+
+<section class="wrap">
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Universal output</h3>
+      <p>H.264/AAC MP4 — the most widely supported video format there is — plus MOV, HEVC,
+      animated GIF and M4A audio extraction.</p>
+    </div>
+    <div class="card">
+      <h3>Keeps your quality</h3>
+      <p>Never upscales, never crops. Resolution up to a 3840 long edge, frame rates up to
+      60 fps, with High / Standard / Saver quality presets.</p>
+    </div>
+    <div class="card">
+      <h3>Fixes HDR colour</h3>
+      <p>Dolby Vision and HLG footage is tone-mapped to standard BT.709 colour on-device,
+      so nothing looks washed out on other screens.</p>
+    </div>
+    <div class="card">
+      <h3>Splits long videos</h3>
+      <p>Optionally split into 2–8 equal parts, or fixed 30 / 60 / 90-second clips — handy
+      for stories and status updates.</p>
+    </div>
+    <div class="card">
+      <h3>Right way up</h3>
+      <p>Orientation is baked into the pixels, so portrait clips never end up sideways on
+      players that ignore rotation metadata.</p>
+    </div>
+    <div class="card">
+      <h3>Private by design</h3>
+      <p>No accounts, no servers, no uploads. Your videos are processed on your phone and
+      never leave it.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-row">
+    <div>4K Converter</div>
+    <div class="foot-links">
+      <a href="privacy/">Privacy Policy</a>
+      <a href="mailto:williamscott701@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
